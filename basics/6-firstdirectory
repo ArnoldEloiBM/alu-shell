@@ -1,3 +1,3 @@
 #!/bin/bash
-mkdir <first_directory>
-echo
+mkdir -p
+
