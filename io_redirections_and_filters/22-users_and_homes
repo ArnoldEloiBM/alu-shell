@@ -1,2 +1,2 @@
 #!/bin/bash
--F':' '{ printf "%s:%s\n", $1, $6 }' /etc/passwd | sort
+-F':' '$7 != "/usr/sbin/nologin"  $7 != "/bin/false"  $7 != "" { printf "%s:%s\n", $1, $6 }' /etc/passwd | sort
